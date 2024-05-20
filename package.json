@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "common": "pnpm --filter common",
-    "web": "pnpm --filter web-app"
+    "web": "pnpm --filter web-app",
+    "dev": "pnpm web dev --host",
+    "build": "pnpm web build",
+    "app": "pnpm tauri dev"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +17,7 @@
     "node": ">=20.13.1"
   },
   "type": "module",
-  "devDependencies": {}
+  "devDependencies": {
+    "@tauri-apps/cli": "^1"
+  }
 }
